@@ -13,7 +13,7 @@ class App extends Component {
       number1 : 0,
       number2 : 0,
     },
-    
+
     }
   }
 
@@ -38,8 +38,8 @@ handleNumberSecondChg = (event) =>{
             <input placeholder="first number" onChange={this.handleNumberOneChg}/>
             <input placeholder="second number" onChange={this.handleNumberSecondChg}/>
              <ul>
-                <li><Link to={'/Page1'}>Addition</Link></li>
-                <li><Link to={'/Page2'}>Substraction</Link></li>
+                <li><Link to={'/Page1'}>Addition of numbers</Link></li>
+                <li><Link to={'/Page2'}>Substraction of numbers</Link></li>
              </ul>
              <hr />
 
