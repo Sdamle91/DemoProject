@@ -45,9 +45,9 @@ class DateComponent extends Component{
 
   render(){
     return <div>
-    <h4>Start Date</h4>
+    <h4>Select Start Date</h4>
     <DatePicker onChange={(event) => this.changeDateStart(event)}/>
-    <h4>End Date</h4>
+    <h4>Select End Date</h4>
     <DatePicker onChange={(event) => this.changeDateEnd(event)}/>
     <button onClick={this.getDateDiff}>Get Difference</button>
     </div>
