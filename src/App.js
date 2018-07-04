@@ -4,6 +4,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Page1 from './page1.js';
 import Page2 from './page2.js';
+import DateComponent from './DateComponent.js';
+
 
 class App extends Component {
   constructor(props){
@@ -40,12 +42,14 @@ handleNumberSecondChg = (event) =>{
              <ul>
                 <li><Link to={'/Page1'}>Addition of numbers</Link></li>
                 <li><Link to={'/Page2'}>Substraction of numbers</Link></li>
+                <li><Link to={'/DateComponent'}>Date</Link></li>
              </ul>
              <hr />
 
              <Switch>
                 <Route exact path='/Page1' render={()=>{return <Page1 numbers={this.state.numbers} /> }} />
                 <Route exact path='/Page2' component={Page2} />
+                <Route exact path='/DateComponent' component={DateComponent} />
              </Switch>
           </div>
        </Router>
